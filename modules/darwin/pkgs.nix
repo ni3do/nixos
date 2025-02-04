@@ -3,6 +3,8 @@
 {
   programs.zsh.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+
   environment.systemPackages = with pkgs; [
     atuin
     # better cat
@@ -47,7 +49,7 @@
     unnaturalscrollwheels
     vscode
     wget
-    whatsapp-for-mac
+    # whatsapp-for-mac
     # tiling window manager for macos
     yabai
     zsh

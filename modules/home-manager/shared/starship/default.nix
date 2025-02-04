@@ -2,9 +2,11 @@
   pkgs,
   ...
 }: {
-  enable = true;
-  settings = {
-    add_newline = false;
-    scan_timeout = 10;
+  programs.starship = {
+    enable = true;
+    settings = {
+      add_newline = false;
+      scan_timeout = 10;
+    };
   };
 }
