@@ -19,7 +19,10 @@ in
   };
 
   home.file.".config/zsh" = {
-    source = homeManagerConfig.linkSharedApp config "zsh";
+    source = ./config;
     recursive = true;
+  };
+  home.file.".zshrc" = {
+    source = ./config/.zshrc;
   };
 }

@@ -11,7 +11,6 @@
 
     taps = [
       "felixkratz/formulae"
-      "nikitabobko/tap"
     ];
     brews = [
       "lua"
@@ -26,7 +25,6 @@
       { name = "macs-fan-control"; greedy = true; }
       { name = "nordvpn"; greedy = true; }
       { name = "karabiner-elements"; greedy = true; }
-      { name = "aerospace"; greedy = true; }
       # temporary office
       { name = "microsoft-teams"; greedy = true; }
       { name = "zoom"; greedy = true; }

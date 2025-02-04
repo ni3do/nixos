@@ -15,6 +15,7 @@ antigen bundle git
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle hadenlabs/zsh-starship
 
 antigen apply
 
@@ -127,4 +128,3 @@ alias -- pull='git pull'
 alias -- push='git push'
 alias -- stat='git status'
 alias -- vdiff='git difftool HEAD'
-
