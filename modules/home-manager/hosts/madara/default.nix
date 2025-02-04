@@ -7,7 +7,7 @@
     ./kanata
     ./kitty
     ./sketchybar
-    ./textfox
+    # ./textfox
     ./yabai
   ];
 }
