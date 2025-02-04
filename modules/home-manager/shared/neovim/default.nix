@@ -1,9 +1,4 @@
-{
-  pkgs,
-  homeManagerConfig,
-  config,
-  ...
-}:
+{ ... }:
 
 {
   programs.neovim = {

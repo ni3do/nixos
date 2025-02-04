@@ -1,4 +1,4 @@
-{ homeManagerConfig, config, ... }:
+{ ... }:
 
 {
   home.file.".config/kanata" = {
