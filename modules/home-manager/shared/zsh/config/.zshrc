@@ -8,17 +8,6 @@ export EDITOR="$VISUAL"
 
 export PATH="$PATH:$HOME/neovim/bin"
 
-# Antigen
-source "$ZSH/plugins/antigen.zsh"
-
-antigen bundle git
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle hadenlabs/zsh-starship
-
-antigen apply
-
 # micromamba Activation
 eval "$(micromamba shell hook --shell zsh)"
 
@@ -111,8 +100,6 @@ alias -- helpyabai='cat ~/.config/yabai/yabairc'
 alias -- mm=micromamba
 alias visudo="sudo -E visudo"
 # Default app improvements
-alias -- cat=bat
-alias -- htop=btop
 alias -- ls="eza --icons=always"
 alias -- vi=nvim
 # Git aliases

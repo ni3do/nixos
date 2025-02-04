@@ -37,6 +37,7 @@
     nodejs_23
     # sketchybar dependency
     nowplaying-cli
+    oh-my-zsh
     pre-commit
     python3
     # fzf dependency
