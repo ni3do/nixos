@@ -2,12 +2,11 @@
 
 {
   imports = [
-    ./aerospace
-    # ./borders
+    ./borders
     ./kanata
     ./kitty
     ./sketchybar
-    # ./textfox
-    # ./yabai
+    ./skhd
+    ./yabai
   ];
 }

@@ -16,7 +16,6 @@
 
 ;; Definine two aliases, one for esc/control to other for function key
 (defalias
-  escctrl (tap-hold 100 100 esc lctl)
   a (tap-hold $tap-time $hold-time a lmet)
   s (tap-hold $tap-time $hold-time s lalt)
   d (tap-hold $tap-time $hold-time d lsft)
@@ -29,12 +28,10 @@
 
 (deflayer base
   brdn     brup  _    _    _    _   prev  pp  next  mute  vold  volu
-  @escctrl @a    @s   @d   @f   @j  @k    @l  @;
+  esc @a    @s   @d   @f   @j  @k    @l  @;
 )
 
 (deflayer fn
   f1       f2  f3  f4  f5  f6  f7  f8  f9   f10   f11   f12
-  @escctrl _   _   _   _   _   _   _   _
+  esc _   _   _   _   _   _   _   _
 )
-      
-;; vim:ft=lisp:

@@ -18,5 +18,8 @@ in
     '';
   };
 
-  home.file.".config/zsh".source = homeManagerConfig.linkSharedApp config "zsh";
+  home.file.".config/zsh" = {
+    source = homeManagerConfig.linkSharedApp config "zsh";
+    recursive = true;
+  };
 }

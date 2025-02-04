@@ -12,5 +12,8 @@
     withPython3 = true;
   };
 
-  home.file.".config/nvim".source = homeManagerConfig.linkSharedApp config "neovim";
+  home.file.".config/nvim" = {
+    source = ./config;
+    recursive = true;
+  };
 }

@@ -1,5 +1,8 @@
 { homeManagerConfig, config, ... }:
 
 {
-  home.file.".config/borders".source = homeManagerConfig.linkHostApp config "borders";
+  home.file.".config/borders" = {
+    source = ./config;
+    recursive = true;
+  };
 }
