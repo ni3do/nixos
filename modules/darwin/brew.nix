@@ -23,11 +23,13 @@
       { name = "firefox"; greedy = true; }
       { name = "font-sf-pro"; greedy = true; }
       { name = "macs-fan-control"; greedy = true; }
-      { name = "nordvpn"; greedy = true; }
+      { name = "nordvpn"; greedy = true; } 
       { name = "karabiner-elements"; greedy = true; }
       # temporary office
       { name = "microsoft-teams"; greedy = true; }
       { name = "zoom"; greedy = true; }
+      # fonts
+      { name = "font-jetbrains-mono-nerd-font"; greedy = true; }
     ];
     masApps = {
       "AdGuard for Safari" = 1440147259;

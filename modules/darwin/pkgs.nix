@@ -5,6 +5,14 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  # TODO: get fronts from packages rather than from brew
+  # fonts.packages = with pkgs; [
+  #   nerd-fonts.jetbrains-mono
+  #   nerd-fonts.fira-mono
+  #   nerd-fonts.profont
+  #
+  # ];
+
   environment.systemPackages = with pkgs; [
     atuin
     # better cat
