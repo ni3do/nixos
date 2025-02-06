@@ -4,7 +4,8 @@
     enable = true;
   };
 
-  home.file.".tmux.conf" = {
-    source = ./config/tmux.conf;
+  home.file.".config/tmux" = {
+    source = ./config;
+    recursive = true;
   };
 }
