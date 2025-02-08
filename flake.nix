@@ -4,14 +4,13 @@
 
   inputs = {
     nixpkgs = {
-      # TODO: switch back to unstable
-      url = "github:nixos/nixpkgs/nixos-24.11";
+      url = "github:nixos/nixpkgs/nixos-unstable";
     };
     nixpkgs-stable = {
       url = "github:nixos/nixpkgs/nixos-24.11";
     };
     nix-darwin = {
-      url = "github:LnL7/nix-darwin/nix-darwin-24.11";
+      url = "github:LnL7/nix-darwin/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-homebrew = {
