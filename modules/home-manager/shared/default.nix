@@ -7,6 +7,7 @@
     ./neovim
     ./ssh
     ./starship
+    ./tmux
     ./zsh
   ];
 }

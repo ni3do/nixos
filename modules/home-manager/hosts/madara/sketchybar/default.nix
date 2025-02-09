@@ -1,5 +1,8 @@
-{ homeManagerConfig, config, ... }:
+{ ... }:
 
 {
-  home.file.".config/sketchybar".source = homeManagerConfig.linkHostApp config "sketchybar";
+  home.file.".config/sketchybar" = {
+    source = ./config;
+    recursive = true;
+  };
 }

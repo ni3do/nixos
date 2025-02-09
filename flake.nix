@@ -26,12 +26,12 @@
       inputs.home-manager.follows = "home-manager";
     };
     # TODO: check if these are wanted
-    impermanence = {
-      url = "github:nix-community/impermanence";
-    };
-    textfox = {
-      url = "github:adriankarlen/textfox";
-    };
+    # impermanence = {
+    #   url = "github:nix-community/impermanence";
+    # };
+    # textfox = {
+    #   url = "github:adriankarlen/textfox";
+    # };
   };
 
   outputs =
@@ -43,8 +43,8 @@
       nix-homebrew,
       home-manager,
       agenix,
-      impermanence,
-      textfox,
+      # impermanence,
+      # textfox,
       ...
     }@inputs:
     let
@@ -93,7 +93,7 @@
             modules = (builtins.attrValues nixosModules) ++ [
               (./. + "/hosts/${vars.hostname}")
               agenix.nixosModules.default
-              impermanence.nixosModules.impermanence
+              # impermanence.nixosModules.impermanence
               home-manager.nixosModules.home-manager
               {
                 home-manager.useGlobalPkgs = true;
@@ -162,7 +162,7 @@
       # };
 
       darwinConfigurations = {
-        solaire = createDarwin "madara" "simon" "Simon Wachter" "simon.wachter@outlook.com";
+        madara = createDarwin "madara" "simon" "Simon Wachter" "simon.wachter@outlook.com";
       };
 
       darwinPackages = self.darwinConfigurations.${outputs.networking.hostName}.pkgs;

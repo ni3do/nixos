@@ -13,6 +13,7 @@
       "felixkratz/formulae"
     ];
     brews = [
+      "lua"
       "mas"
       "rust"
       "sketchybar"
@@ -22,11 +23,21 @@
       { name = "firefox"; greedy = true; }
       { name = "font-sf-pro"; greedy = true; }
       { name = "macs-fan-control"; greedy = true; }
-      { name = "nordvpn"; greedy = true; }
+      { name = "nordvpn"; greedy = true; } 
+      { name = "notion"; greedy = true; }
+      { name = "notion-enhanced"; greedy = true; }
+      { name = "rectangle"; greedy = true; }
+      { name = "spotify"; greedy = true; }
+      { name = "telegram-desktop"; greedy = true; }
+      { name = "visual-studio-code"; greedy = true; }
+      { name = "whatsapp"; greedy = true; }
+      { name = "zoom"; greedy = true; }
       { name = "karabiner-elements"; greedy = true; }
       # temporary office
       { name = "microsoft-teams"; greedy = true; }
       { name = "zoom"; greedy = true; }
+      # fonts
+      { name = "font-jetbrains-mono-nerd-font"; greedy = true; }
     ];
     masApps = {
       "AdGuard for Safari" = 1440147259;

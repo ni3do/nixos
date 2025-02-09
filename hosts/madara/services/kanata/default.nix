@@ -9,7 +9,7 @@ let
 in
 {
   launchd.daemons.kanata = {
-    command = "${kanataPath}/kanata -c ${kanataPath}/personal.kbd";
+    command = "/Users/simon/.config/kanata/kanata -c /Users/simon/.config/kanata/personal.kbd";
     serviceConfig = {
       Label = "org.nixos.kanata";
       UserName = "root";

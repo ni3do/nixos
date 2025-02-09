@@ -1,5 +1,8 @@
-{ homeManagerConfig, config, ... }:
+{ ... }:
 
 {
-  home.file.".config/kitty".source = homeManagerConfig.linkHostApp config "kitty";
+  home.file.".config/kitty" = {
+    source = ./config;
+    recursive = true;
+  };
 }

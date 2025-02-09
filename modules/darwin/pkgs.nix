@@ -3,6 +3,16 @@
 {
   programs.zsh.enable = true;
 
+  nixpkgs.config.allowUnfree = true;
+
+  # TODO: get fronts from packages rather than from brew
+  # fonts.packages = with pkgs; [
+  #   nerd-fonts.jetbrains-mono
+  #   nerd-fonts.fira-mono
+  #   nerd-fonts.profont
+  #
+  # ];
+
   environment.systemPackages = with pkgs; [
     atuin
     # better cat
@@ -27,6 +37,7 @@
     nodejs_23
     # sketchybar dependency
     nowplaying-cli
+    oh-my-zsh
     pre-commit
     python3
     # fzf dependency
@@ -47,7 +58,7 @@
     unnaturalscrollwheels
     vscode
     wget
-    whatsapp-for-mac
+    # whatsapp-for-mac
     # tiling window manager for macos
     yabai
     zsh

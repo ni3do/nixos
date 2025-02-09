@@ -1,5 +1,8 @@
-{ homeManagerConfig, config, ... }:
+{ ... }:
 
 {
-  home.file.".config/kanata".source = homeManagerConfig.linkHostApp config "kanata";
+  home.file.".config/kanata" = {
+    source = ./config;
+    recursive = true;
+  };
 }

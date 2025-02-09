@@ -1,5 +1,8 @@
-{ homeManagerConfig, config, ... }:
+{ ... }:
 
 {
-  home.file.".config/bat".source = homeManagerConfig.linkSharedApp config "bat";
+  home.file.".config/bat" = {
+    source = ./config;
+    recursive = true;
+  };
 }
