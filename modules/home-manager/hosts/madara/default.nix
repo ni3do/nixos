@@ -32,11 +32,6 @@
       "helpskhd" = "cat ~/.config/skhd/skhdrc";
       "helpyabai" = "cat ~/.config/yabai/yabairc";
       "ssh" = "TERM=xterm-256color ssh";
-      # improved utilities
-      "htop" = "btop";
-      "cat" = "bat";
-      "ls" = "eza";
-      
   };
   imports = [
     ./borders
