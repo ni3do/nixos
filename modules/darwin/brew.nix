@@ -26,6 +26,7 @@
       { name = "nordvpn"; greedy = true; } 
       { name = "notion"; greedy = true; }
       { name = "notion-enhanced"; greedy = true; }
+      { name = "obsidian"; greedy = true; }
       { name = "rectangle"; greedy = true; }
       { name = "spotify"; greedy = true; }
       { name = "telegram-desktop"; greedy = true; }
