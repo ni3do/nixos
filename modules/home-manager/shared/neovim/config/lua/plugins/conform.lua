@@ -2,14 +2,8 @@ return {
   "stevearc/conform.nvim",
   opts = {
     formatters_by_ft = {
-      python = { "black", "isort" },
+      python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
       nix = { "nixfmt" },
-    },
-
-    formatters = {
-      black = {
-        prepend_args = { "--line-length", "120" },
-      },
     },
   },
 }
