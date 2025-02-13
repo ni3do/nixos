@@ -26,6 +26,7 @@
     fzf
     gh
     git
+    imagemagick
     # colored borders for user windows on macos
     jankyborders
     # terminal emulator
