@@ -11,8 +11,10 @@
 
     taps = [
       "felixkratz/formulae"
+      "7sedam7/krafna"
     ];
     brews = [
+      "krafna"
       "lua"
       "mas"
       "rust"

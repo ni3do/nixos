@@ -5,3 +5,5 @@
 vim.opt.colorcolumn = "120"
 vim.opt.textwidth = 120
 vim.opt.scrolloff = 10
+vim.g.vimtex_view_method = "zathura"
+vim.g.vimtex_view_zathura_use_synctex = 0

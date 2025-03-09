@@ -46,13 +46,12 @@
     # keyboard shortcut daemon for macos
     skhd
     spotify
-    # macos top bar
-    # sketchybar
     # terminal prompt
     starship
     # sketchybar dependency
     switchaudio-osx
     telegram-desktop
+    texliveFull
     tmux
     # invert scroll direction of physical scroll wheels
     unnaturalscrollwheels
@@ -61,6 +60,8 @@
     # whatsapp-for-mac
     # tiling window manager for macos
     yabai
+    # pdf viewer
+    zathura
     zsh
   ];
 }

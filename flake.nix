@@ -15,6 +15,7 @@
     };
     nix-homebrew = {
       url = "github:zhaofengli-wip/nix-homebrew";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -25,13 +26,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
-    # TODO: check if these are wanted
-    # impermanence = {
-    #   url = "github:nix-community/impermanence";
-    # };
-    # textfox = {
-    #   url = "github:adriankarlen/textfox";
-    # };
   };
 
   outputs =
@@ -43,8 +37,6 @@
       nix-homebrew,
       home-manager,
       agenix,
-      # impermanence,
-      # textfox,
       ...
     }@inputs:
     let
