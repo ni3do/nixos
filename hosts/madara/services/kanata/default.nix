@@ -3,12 +3,8 @@
   vars,
   ...
 }:
-
-let
-  kanataPath = "${config.users.users.${vars.defaultUser}.home}/.config/kanata";
-in
 {
-  launchd.daemons.kanata = {
+  launchd.user.agents.kanata = {
     command = "/Users/simon/.config/kanata/kanata -c /Users/simon/.config/kanata/personal.kbd";
     serviceConfig = {
       Label = "org.nixos.kanata";
@@ -16,8 +12,8 @@ in
       GroupName = "root";
       RunAtLoad = true;
       KeepAlive = true;
-      StandardOutPath = "/Library/Logs/Kanata/kanata.out.log";
-      StandardErrorPath = "/Library/Logs/Kanata/kanata.err.log";
+      StandardOutPath = "/var/logs/kanata.out.log";
+      StandardErrorPath = "/var/logs/kanata.err.log";
     };
   };
 }
