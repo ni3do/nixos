@@ -5,5 +5,3 @@
 vim.keymap.set("n", "<leader>fr", function()
   Snacks.terminal(nil, { win = { position = "right" } })
 end, { desc = "Terminal right" })
-
-vim.keymap.set("n", "<leader>o", ":ObsidianQuickSwitch<CR>", { desc = "Open Obsidian Quick Switch" })

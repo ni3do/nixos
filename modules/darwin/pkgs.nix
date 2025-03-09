@@ -26,7 +26,6 @@
     fzf
     gh
     git
-    imagemagick
     # colored borders for user windows on macos
     jankyborders
     # terminal emulator
@@ -47,8 +46,6 @@
     # keyboard shortcut daemon for macos
     skhd
     spotify
-    # macos top bar
-    # sketchybar
     # terminal prompt
     starship
     # sketchybar dependency
