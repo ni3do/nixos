@@ -2,7 +2,10 @@
 
 {
   # Add sudo by fingerprint
-  security.pam.enableSudoTouchIdAuth = true;
+  security.pam.services.sudo_local.touchIdAuth = true;
+  
+  # Default Nix build user group ID was changed to 350
+  ids.gids.nixbld = 350;
 
   system = {
     startup.chime = false;
