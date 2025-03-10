@@ -43,8 +43,9 @@
     masApps = {
       "AdGuard for Safari" = 1440147259;
       "Bitwarden" = 1352778147; 
-      "Wireguard" = 1451685025;
+      "Keynote" = 409183694;
       "Vimari" = 1480933944;
+      "Wireguard" = 1451685025;
       };
   };
 }
