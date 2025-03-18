@@ -22,6 +22,8 @@
     discord
     # better ls
     eza
+    # lazyvim picker dependency
+    fd
     # command-line fuzzy finder
     fzf
     gh
