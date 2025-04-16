@@ -54,6 +54,8 @@
     switchaudio-osx
     telegram-desktop
     texliveFull
+    # Latex formatter
+    tex-fmt
     tmux
     # invert scroll direction of physical scroll wheels
     unnaturalscrollwheels
