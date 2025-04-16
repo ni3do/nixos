@@ -14,6 +14,7 @@
       "7sedam7/krafna"
     ];
     brews = [
+      "kanata"
       "krafna"
       "lua"
       "mas"
