@@ -9,8 +9,8 @@
 
   system = {
     activationScripts.postUserActivation.text = ''
-        sudo ~/.config/kanata/kanata -nc ~/.config/kanata/personal.kbd &
-      '';
+        sudo /Users/simon/.config/kanata/kanata -nc /Users/simon/.config/kanata/personal.kbd & bash ~/.config/borders/bordersrc
+    '';
 
     startup.chime = false;
     keyboard = {

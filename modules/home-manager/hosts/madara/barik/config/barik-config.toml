@@ -10,6 +10,7 @@ theme = "system" # system, light, dark
 displayed = [ # widgets on menu bar
     "default.spaces",
     "spacer",
+    "default.nowplaying",
     "default.network",
     "default.battery",
     "divider",
@@ -38,4 +39,4 @@ calendar.show-events = true
 view-variant = "box"
 
 [background]
-enabled = false
+enabled = true
