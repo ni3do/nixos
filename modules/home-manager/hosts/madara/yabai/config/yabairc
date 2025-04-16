@@ -3,7 +3,7 @@
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
-yabai -m config external_bar all:34:0 \
+yabai -m config external_bar all:45:0 \
   mouse_follows_focus off \
   focus_follows_mouse off \
   window_zoom_persist off \
@@ -25,6 +25,11 @@ yabai -m config external_bar all:34:0 \
   left_padding 10 \
   right_padding 10 \
   window_gap 10
+
+# Define Spaces
+yabai -m rule --add space=1 label="Safari" app="^Safari$"
+yabai -m rule --add space=2 label="Kitty" app="^Kitty$"
+yabai -m rule --add space=5 label="Spotify" app="^Spotify$"
 
 # Exclude problematic apps from being managed:
 yabai -m rule --add app="^(Calculator|Software Update|Dictionary|VLC|System Settings|zoom.us|Photo Booth|Archive Utility|App Store|Alfred Preferences|Activity Monitor|Finder)$" manage=off

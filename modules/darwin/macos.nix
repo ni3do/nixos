@@ -8,6 +8,10 @@
   ids.gids.nixbld = 350;
 
   system = {
+    activationScripts.postUserActivation.text = ''
+        sudo /Users/simon/.config/kanata/kanata -nc /Users/simon/.config/kanata/personal.kbd & bash ~/.config/borders/bordersrc
+    '';
+
     startup.chime = false;
     keyboard = {
       enableKeyMapping = true;
