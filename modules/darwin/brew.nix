@@ -21,6 +21,7 @@
       "sketchybar"
     ];
     casks = [
+      { name = "mocki-toki/formulae/barik"; greedy = true; }
       { name = "cursor"; greedy = true; }
       { name = "firefox"; greedy = true; }
       { name = "font-sf-pro"; greedy = true; }
