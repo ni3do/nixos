@@ -22,6 +22,8 @@
     discord
     # better ls
     eza
+    # lazyvim picker dependency
+    fd
     # command-line fuzzy finder
     fzf
     gh
@@ -52,6 +54,8 @@
     switchaudio-osx
     telegram-desktop
     texliveFull
+    # Latex formatter
+    tex-fmt
     tmux
     # invert scroll direction of physical scroll wheels
     unnaturalscrollwheels
