@@ -2,7 +2,7 @@
 
 {
   home.file.".barik-config.toml" = {
-    source = ./config;
-    recursive = true;
+    source = ./config/barik-config.toml;
+    recursive = false;
   };
 }
