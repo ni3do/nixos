@@ -1,3 +1,0 @@
-{
-  "PythonPrint": { "prefix": "pp", "body": "print(\"$1\", $1)" }
-}
