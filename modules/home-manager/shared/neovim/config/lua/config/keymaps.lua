@@ -1,4 +1,23 @@
 vim.keymap.set("n", "<leader>qq", "<cmd>qa<CR>", { desc = "Quit all" })
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", { desc = "Save file" })
+vim.keymap.set("i", "<C-s>", "<ESC><cmd>w<CR>", { desc = "Save file" })
+
+vim.keymap.set("n", "<leader>na", function()
+	vim.ui.input({ prompt = "Enter new file name: " }, function(input)
+		if input and input ~= "" then
+			local inbox_path = vim.fn.expand("~/repos/second-brain/inbox/")
+			local full_path = inbox_path .. "/" .. input
+
+			local file = io.open(full_path, "w")
+			if file then
+				file:close()
+				vim.cmd("edit " .. vim.fn.fnameescape(full_path))
+			else
+				vim.notify("Could not create file: " .. full_path, vim.log.levels.ERROR)
+			end
+		end
+	end)
+end, { desc = "Create new inbox file" })
 
 vim.keymap.set("n", "gl", function()
 	vim.diagnostic.open_float()

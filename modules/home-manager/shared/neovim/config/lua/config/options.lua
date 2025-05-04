@@ -63,6 +63,11 @@ vim.opt.inccommand = "split"
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+-- Folding options
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
