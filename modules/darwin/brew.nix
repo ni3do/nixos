@@ -14,6 +14,7 @@
       "7sedam7/krafna"
     ];
     brews = [
+      "coreutils"
       "kanata"
       "krafna"
       "lua"
