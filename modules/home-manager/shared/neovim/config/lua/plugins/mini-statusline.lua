@@ -1,1 +1,2 @@
-return { 'echasnovski/mini.statusline', version = false , opts = {}}
+return {}
+-- return { 'echasnovski/mini.statusline', version = false , opts = {}}

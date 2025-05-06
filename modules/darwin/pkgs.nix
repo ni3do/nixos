@@ -32,6 +32,8 @@
     jankyborders
     # terminal emulator
     kitty
+    # pokemon image cli
+    krabby
     lua
     # python env and package manager
     micromamba
