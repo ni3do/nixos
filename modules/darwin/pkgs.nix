@@ -19,6 +19,8 @@
     bat
     # better top
     btop
+    # terminal graphics
+    chafa
     discord
     # better ls
     eza
@@ -42,11 +44,12 @@
     # sketchybar dependency
     nowplaying-cli
     oh-my-zsh
+    pokemon-colorscripts-mac
     pre-commit
     python3
     # fzf dependency
     ripgrep
-    signal-desktop
+    # signal-desktop
     # keyboard shortcut daemon for macos
     skhd
     spotify
