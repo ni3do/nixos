@@ -14,6 +14,7 @@
   # ];
 
   environment.systemPackages = with pkgs; [
+    # shell history
     atuin
     # better cat
     bat
@@ -30,6 +31,8 @@
     fzf
     gh
     git
+    # wallpaper converter / daily wallpaper provider
+    gowall
     # colored borders for user windows on macos
     jankyborders
     # terminal emulator
@@ -44,7 +47,6 @@
     # sketchybar dependency
     nowplaying-cli
     oh-my-zsh
-    pokemon-colorscripts-mac
     pre-commit
     python3
     # fzf dependency
