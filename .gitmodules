@@ -1,0 +1,3 @@
+[submodule "modules/home-manager/shared/neovim/config"]
+	path = modules/home-manager/shared/neovim/config
+	url = git@github.com:ni3do/neovim.git
