@@ -27,6 +27,7 @@
       gac = "git add .; git commit -m 'auto-commit'; git push";
       ll = "ls -l";
       ndswitch = "nix --extra-experimental-features nix-command --extra-experimental-features flakes run nix-darwin -- switch --flake '.?submodules=1'";
+      nupdate = "nix --extra-experimental-features nix-command --extra-experimental-features flakes flake update --flake";
     };
   };
 }
