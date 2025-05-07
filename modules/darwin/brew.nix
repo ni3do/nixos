@@ -29,6 +29,7 @@
       # productivity
       { name = "cursor"; greedy = true; }
       { name = "obsidian"; greedy = true; }
+      { name = "raycast"; greedy = true; }
       { name = "unnaturalscrollwheels"; greedy = true; }
       { name = "visual-studio-code"; greedy = true; }
       { name = "karabiner-elements"; greedy = true; }
