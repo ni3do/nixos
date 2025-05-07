@@ -20,6 +20,7 @@
       # sketchybar dependency
       "lua"
       "mas"
+      "rust"
       # sketchybar dependency
       "nowplaying-cli"
       "sketchybar"

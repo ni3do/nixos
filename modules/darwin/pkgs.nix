@@ -28,6 +28,7 @@
     # python env and package manager
     micromamba
     neovim
+    nodejs_23
     pre-commit
     python3
     # fzf dependency
