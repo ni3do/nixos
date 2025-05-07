@@ -11,17 +11,21 @@
 
     taps = [
       "felixkratz/formulae"
+      "koekeishiya/formulae"
     ];
     brews = [
       "borders"
-      "koekeishiya/formulae/skhd"
+      "skhd"
       "kanata"
+      # sketchybar dependency
+      "lua"
       "mas"
-      # sketchybar dependencies
+      # sketchybar dependency
       "nowplaying-cli"
       "sketchybar"
+      # sketchybar dependency
       "switchaudio-osx"
-      "koekeishiya/formulae/yabai"
+      "yabai"
     ];
     casks = [
       # browser

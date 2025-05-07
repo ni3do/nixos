@@ -34,11 +34,10 @@
       "ssh" = "TERM=xterm-256color ssh";
   };
   imports = [
-    ./barik
     ./borders
     ./kanata
     ./kitty
-    # ./sketchybar
+    ./sketchybar
     ./skhd
     ./yabai
   ];
