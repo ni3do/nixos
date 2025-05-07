@@ -38,7 +38,7 @@
     ./borders
     ./kanata
     ./kitty
-    # ./sketchybar
+    ./sketchybar
     ./skhd
     ./yabai
   ];

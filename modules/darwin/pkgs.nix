@@ -14,11 +14,14 @@
   # ];
 
   environment.systemPackages = with pkgs; [
+    # shell history
     atuin
     # better cat
     bat
     # better top
     btop
+    # terminal graphics
+    chafa
     discord
     # better ls
     eza
@@ -28,10 +31,14 @@
     fzf
     gh
     git
+    # wallpaper converter / daily wallpaper provider
+    gowall
     # colored borders for user windows on macos
     jankyborders
     # terminal emulator
     kitty
+    # pokemon image cli
+    krabby
     lua
     # python env and package manager
     micromamba
@@ -44,7 +51,7 @@
     python3
     # fzf dependency
     ripgrep
-    signal-desktop
+    # signal-desktop
     # keyboard shortcut daemon for macos
     skhd
     spotify
