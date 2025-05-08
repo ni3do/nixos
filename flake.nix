@@ -17,15 +17,6 @@
       url = "github:zhaofengli-wip/nix-homebrew";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    home-manager = {
-      url = "github:nix-community/home-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    agenix = {
-      url = "github:ryantm/agenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
   };
 
   outputs =
@@ -36,7 +27,6 @@
       nix-darwin,
       nix-homebrew,
       home-manager,
-      agenix,
       ...
     }@inputs:
     let
@@ -50,7 +40,6 @@
 
       nixosModules = import ./modules/nixos;
       darwinModules = import ./modules/darwin;
-      homeManagerModules = import ./modules/home-manager;
 
       legacyPackages = forAllSystems (
         system:
@@ -59,18 +48,6 @@
           config.allowUnfree = true;
         }
       );
-
-      buildHomeManagerConfig =
-        hostname:
-        let
-          rootPath = "/etc/nixos/modules/home-manager";
-          hostPath = "${rootPath}/hosts/${hostname}";
-          sharedPath = "${rootPath}/shared";
-        in
-        {
-          linkHostApp = config: app: config.lib.file.mkOutOfStoreSymlink "${hostPath}/${app}/config";
-          linkSharedApp = config: app: config.lib.file.mkOutOfStoreSymlink "${sharedPath}/${app}/config";
-        };
 
       createNixOS =
         system: hostname: username: fullname: email:
@@ -84,17 +61,6 @@
 
             modules = (builtins.attrValues nixosModules) ++ [
               (./. + "/hosts/${vars.hostname}")
-              agenix.nixosModules.default
-              # impermanence.nixosModules.impermanence
-              home-manager.nixosModules.home-manager
-              {
-                home-manager.useGlobalPkgs = true;
-                home-manager.useUserPackages = true;
-                home-manager.users."${vars.defaultUser}" = homeManagerModules;
-                home-manager.extraSpecialArgs = specialArgs // {
-                  homeManagerConfig = buildHomeManagerConfig vars.hostname;
-                };
-              }
             ];
           in
           nixpkgs.lib.nixosSystem { inherit system modules specialArgs; }
@@ -116,16 +82,6 @@
             };
             modules = (builtins.attrValues darwinModules) ++ [
               (./. + "/hosts/${hostname}")
-              agenix.nixosModules.default
-              home-manager.darwinModules.home-manager
-              {
-                home-manager.useGlobalPkgs = true;
-                home-manager.useUserPackages = true;
-                home-manager.users."${username}" = homeManagerModules;
-                home-manager.extraSpecialArgs = specialArgs // {
-                  homeManagerConfig = buildHomeManagerConfig hostname;
-                };
-              }
               nix-homebrew.darwinModules.nix-homebrew
               {
                 nix-homebrew = {
