@@ -12,10 +12,10 @@
     taps = [
       "felixkratz/formulae"
       "koekeishiya/formulae"
+      "nikitabobko/tap"
     ];
     brews = [
       "borders"
-      "skhd"
       "kanata"
       # sketchybar dependency
       "lua"
@@ -24,14 +24,21 @@
       # sketchybar dependency
       "nowplaying-cli"
       "sketchybar"
+      "skhd"
+      # terminal prompt
+      "starship"
       # sketchybar dependency
       "switchaudio-osx"
-      "yabai"
+      # "yabai"
     ];
     casks = [
       # browser
       { name = "firefox"; greedy = true; }
+      # terminal
+      { name = "ghostty"; greedy = true; }
       # productivity
+      { name = "aerospace"; greedy = true; }
+      { name = "chatgpt"; greedy = true; }
       { name = "cursor"; greedy = true; }
       { name = "obsidian"; greedy = true; }
       { name = "raycast"; greedy = true; }

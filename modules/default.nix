@@ -7,7 +7,7 @@
     ./shared
   ];
 
-  programs.home-manager.enable = true;
+  programs.home-manager.enable = false;
 
   home = {
     username = vars.defaultUser;

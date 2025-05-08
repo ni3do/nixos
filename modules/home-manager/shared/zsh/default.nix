@@ -1,5 +1,8 @@
 { ... }:
 {
+
+  programs.zoxide.enableZshIntegration = true;
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -12,6 +15,7 @@
       # misc  aliases
       x = "exit";
       vi = "nvim";
+      z = "zoxide";
       mm = "micromamba";
       # git aliases
       gss = "git status --short";

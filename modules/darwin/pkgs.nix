@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-  programs.zsh.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
@@ -21,8 +20,6 @@
     fzf
     gh
     git
-    # terminal emulator
-    kitty
     # pokemon image cli
     krabby
     # python env and package manager
@@ -33,8 +30,6 @@
     python3
     # fzf dependency
     ripgrep
-    # terminal prompt
-    starship
     texliveFull
     # Latex formatter
     tex-fmt
@@ -42,6 +37,8 @@
     wget
     # pdf viewer
     zathura
+    # smart cd
+    zoxide
     zsh
   ];
 }

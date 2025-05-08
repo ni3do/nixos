@@ -1,8 +1,6 @@
 { vars, ... }:
 
 {
-  programs.home-manager.enable = true;
-  
   imports = [
     (./. + "/hosts/${vars.hostname}")
     (./. + "/users/${vars.defaultUser}.nix")

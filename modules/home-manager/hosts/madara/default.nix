@@ -15,7 +15,7 @@
       # improve shell utils
       "cat" = "bat";
       "rcat" = "cat";
-      "ls" = "eza";
+      "ls" = "eza --long --color=always --icons=always --no-user";
       "rls" = "ls";
   };
   imports = [
