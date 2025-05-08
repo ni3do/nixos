@@ -12,7 +12,6 @@
     taps = [
       "felixkratz/formulae"
       "koekeishiya/formulae"
-      "nikitabobko/tap"
     ];
     brews = [
       "borders"
@@ -29,7 +28,7 @@
       "starship"
       # sketchybar dependency
       "switchaudio-osx"
-      # "yabai"
+      "yabai"
     ];
     casks = [
       # browser
@@ -37,7 +36,6 @@
       # terminal
       { name = "ghostty"; greedy = true; }
       # productivity
-      { name = "aerospace"; greedy = true; }
       { name = "chatgpt"; greedy = true; }
       { name = "cursor"; greedy = true; }
       { name = "obsidian"; greedy = true; }
