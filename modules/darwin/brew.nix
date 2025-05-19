@@ -10,48 +10,50 @@
     };
 
     taps = [
+      # for sketchybar and borders
       "felixkratz/formulae"
-      "koekeishiya/formulae"
+      # for aerospace
+      "nikitabobko/tap"
     ];
     brews = [
+      # nice borders around macos windows
       "borders"
+      # keyboard daemon
       "kanata"
-      # sketchybar dependency
-      "lua"
+      # terminal AppStore manager
       "mas"
-      "rust"
-      # sketchybar dependency
-      "nowplaying-cli"
+      # nice top bar for macos
       "sketchybar"
-      "skhd"
       # terminal prompt
       "starship"
-      # sketchybar dependency
-      "switchaudio-osx"
-      "yabai"
     ];
     casks = [
+      # window manager
+      { name = "aerospace"; greedy = true; }
+      # terminal emulator
+      { name = "ghostty"; greedy = true; }
+      # ide
+      { name = "cursor"; greedy = true; }
+      { name = "visual-studio-code"; greedy = true; }
       # browser
       { name = "firefox"; greedy = true; }
-      # terminal
-      { name = "ghostty"; greedy = true; }
-      # productivity
+      # misc
       { name = "chatgpt"; greedy = true; }
-      { name = "cursor"; greedy = true; }
-      { name = "obsidian"; greedy = true; }
-      { name = "raycast"; greedy = true; }
-      { name = "unnaturalscrollwheels"; greedy = true; }
-      { name = "visual-studio-code"; greedy = true; }
-      { name = "karabiner-elements"; greedy = true; }
-      # util
+      { name = "discord"; greedy = true; }
       { name = "macs-fan-control"; greedy = true; }
       { name = "nordvpn"; greedy = true; } 
+      { name = "obsidian"; greedy = true; }
+      { name = "raycast"; greedy = true; }
       { name = "spotify"; greedy = true; }
       { name = "telegram-desktop"; greedy = true; }
+      { name = "unnaturalscrollwheels"; greedy = true; }
       { name = "whatsapp"; greedy = true; }
+      # kanata dependency, needs the VirtualHIDKeyboard
+      { name = "karabiner-elements"; greedy = true; }
       # fonts
       { name = "font-sf-pro"; greedy = true; }
       { name = "font-jetbrains-mono-nerd-font"; greedy = true; }
+      { name = "font-sketchybar-app-font"; greedy = true; }
     ];
     masApps = {
       "AdGuard for Safari" = 1440147259;
