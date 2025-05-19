@@ -1,6 +1,5 @@
 { ... }: { 
-  services.skhd.enable = true;
+  # both started with aerospace
   services.sketchybar.enable = false;
-  services.yabai.enable = true;
-  services.jankyborders.enable = true;
+  services.jankyborders.enable = false;
 }

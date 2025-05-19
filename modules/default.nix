@@ -7,8 +7,6 @@
     ./shared
   ];
 
-  programs.home-manager.enable = true;
-
   home = {
     username = vars.defaultUser;
     enableNixpkgsReleaseCheck = false;
