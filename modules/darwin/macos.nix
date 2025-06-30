@@ -1,6 +1,8 @@
 { vars, ... }:
 
 {
+  system.primaryUser = "simon";
+
   # Add sudo by fingerprint
   security.pam.services.sudo_local.touchIdAuth = true;
   
