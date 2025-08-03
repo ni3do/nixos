@@ -26,6 +26,10 @@
       "sketchybar"
       # terminal prompt
       "starship"
+      # image conversion tool, mainly for snacks image
+      "imagemagick"
+      # interpreter for postscript and pdf, mainly for snacks image
+      "ghostscript"
     ];
     casks = [
       # window manager
@@ -58,7 +62,7 @@
     masApps = {
       "AdGuard for Safari" = 1440147259;
       "Bitwarden" = 1352778147; 
-      "Vimari" = 1480933944;
+      # "Vimari" = 1480933944;
       "Wireguard" = 1451685025;
       };
   };
